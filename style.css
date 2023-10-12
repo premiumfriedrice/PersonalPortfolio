@@ -27,6 +27,7 @@ body {
     font-size: 100%;
     font-family: sans-serif;
     color: #fff;
+    position: absolute;
 }
 
 section {
