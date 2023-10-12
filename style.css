@@ -35,40 +35,109 @@ section {
     height: 100vh;
 }
 
+#home {
+    background: var(--gradient);
+}
+
 .intro_div {
+    /*outline: red dashed 1px;*/
     position: absolute;
     left: 50%;
     top: 50%;
     transform: translate(-50%, -50%);
 }
 
+.header_container {
+    /*outline: yellow dashed 1px;*/
+    display: flex;
+    justify-content: space-around;
+    padding-top: 40px;
+}
+
 #name {
     font-weight: 100;
     font-size: 96px;
-    padding-left: 5%;
+    padding-left: 4%;
     font-stretch: expanded;
 }
 
 #p1 {
     width: 500px;
-    padding-left: 10%;
+    padding-left: 9%;
     font-weight: 100;
     font-size: 48px;
     font-stretch: expanded;
 }
 
-.vid {
-
+.header-button {
+    margin: 10px;
+    height: 120px;
+    width: 120px;
+    background-color: transparent;
+    opacity: 1;
+    border-radius: 28%;
+    display: inline-block;
+    border: none;
+    font-size: 16px;
+    cursor: pointer;
+    transition: border-radius 0.3s; /* Apply a smooth transition on border-radius */
+    color: white;
+    font-size: 3rem;
 }
 
-#home {
-    background: var(--gradient);
+.header-button:hover {
+    border-radius: 50%; /* Make it a circle on hover */
+  }
+
+.fa-solid {
+    color: #fff;
+}
+
+.resume-button {
+    font-size: 3rem;
 }
 
 #projects {
     background-color: #6699cc;
 }
 
+.project-item {
+    width: 45%;
+    height: 250px;
+    margin: 10x;
+    border: 3px solid #d9a4a4;
+    background-color: #dfdfdf;
+}
+
+.projects_container {
+    padding-top: 100px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-content: center;
+    gap: 5em;
+}
+
 #contacts {
     background-color: black;
 }
+
+.contact-button {
+    margin: 10px;
+    height: 120px;
+    width: 120px;
+    background-color: transparent;
+    opacity: 1;
+    border-radius: 28%;
+    display: inline-block;
+    border: none;
+    font-size: 16px;
+    cursor: pointer;
+    transition: border-radius 0.3s; /* Apply a smooth transition on border-radius */
+    color: white;
+    font-size: 3rem;
+}
+
+.contact-button:hover {
+    border-radius: 50%; /* Make it a circle on hover */
+  }
