@@ -37,6 +37,7 @@ section {
 
 #home {
     background: var(--gradient);
+    width: 100%;
 }
 
 .intro_div {
@@ -107,9 +108,11 @@ section {
     margin: 10x;
     border: 3px solid #d9a4a4;
     background-color: #dfdfdf;
+    flex-shrink: 1;
+    box-shadow: #080808;
 }
 
-.projects_container {
+.projects_container {   /* maybe use grid instead of flexbox? */
     padding-top: 100px;
     display: flex;
     flex-wrap: wrap;
@@ -141,3 +144,9 @@ section {
 .contact-button:hover {
     border-radius: 50%; /* Make it a circle on hover */
   }
+
+
+@media screen and (max-width: 600px)
+{
+    
+}
