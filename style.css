@@ -27,7 +27,6 @@ body {
     font-size: 100%;
     font-family: sans-serif;
     color: #fff;
-    position: absolute;
 }
 
 section {
@@ -149,6 +148,10 @@ section {
 
 @media screen and (max-width: 600px)
 {
+    body{
+        position: absolute;
+    }
+    
     section{
         width: 100%;
     }
