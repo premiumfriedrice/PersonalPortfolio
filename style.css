@@ -43,33 +43,43 @@ section {
 }
 
 .intro_div {
-    /*outline: red dashed 1px;*/
-    position: absolute;
+    outline: red dashed 1px;
+    position: relative;
+    max-width: 35%;
     left: 50%;
     top: 50%;
     transform: translate(-50%, -50%);
 }
 
-.header_container {
-    /*outline: yellow dashed 1px;*/
+.header_text_container {
     display: flex;
-    justify-content: space-around;
-    padding-top: 40px;
+    justify-content: center;
+    align-items: center;
+    outline: yellow dashed 1px;
+    flex-wrap: wrap;
 }
 
 #name {
     font-weight: 100;
     font-size: 96px;
-    padding-left: 4%;
     font-stretch: expanded;
+    white-space: nowrap;
 }
 
 #p1 {
-    width: 500px;
-    padding-left: 9%;
     font-weight: 100;
     font-size: 48px;
     font-stretch: expanded;
+    white-space: nowrap;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.header_buttons_container {
+    /*outline: yellow dashed 1px;*/
+    display: flex;
+    justify-content: space-around;
+    padding-top: 40px;
 }
 
 .header-button {
@@ -89,7 +99,7 @@ section {
 }
 
 .header-button:hover {
-    border-radius: 50%; /* Make it a circle on hover */
+    color:#6699cc; /* Changes colour on hover  */
   }
 
 .resume-button {
@@ -144,7 +154,7 @@ section {
   }
 
 
-@media screen and (max-width: 600px)
+@media (max-width: 600px) 
 {
     body {
         position: absolute;
