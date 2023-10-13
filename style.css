@@ -240,7 +240,7 @@ section {
     }
 
     #name {
-        font-weight: bold;
+        font-weight: 900;
         font-size: 3.5rem;
         font-stretch: expanded;
         white-space: nowrap;
