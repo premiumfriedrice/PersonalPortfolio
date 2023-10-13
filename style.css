@@ -43,7 +43,7 @@ section {
 }
 
 .intro_div {
-    outline: red dashed 1px;
+    /*outline: red dashed 1px;*/
     position: relative;
     max-width: 35%;
     left: 50%;
@@ -52,10 +52,10 @@ section {
 }
 
 .header_text_container {
+    /*outline: yellow dashed 1px;*/
     display: flex;
     justify-content: center;
     align-items: center;
-    outline: yellow dashed 1px;
     flex-wrap: wrap;
 }
 
