@@ -96,7 +96,7 @@ section {
     width: 120px;
     background-color: transparent;
     opacity: 1;
-    border-radius: 28%;
+    border-radius: 32%;
     display: inline-block;
     border: none;
     font-size: 3.5rem;
@@ -112,28 +112,85 @@ section {
   }
 
 #projects {
+    /*outline: red dashed 1px;*/
     height: 100%;
     height: 100%;
     background-color: #6699cc;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-.project-item {
-    width: 45%;
-    height: 250px;
-    margin: 10x;
-    border: 3px solid #d9a4a4;
-    background-color: #dfdfdf;
-    flex-shrink: 1;
-    box-shadow: #080808;
+.wrapper {
+    /*outline: red dashed 1px;*/
+    margin: 0 auto;
+    width: 80%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .projects_container {   /* maybe use grid instead of flexbox? */
-    padding-top: 100px;
+    position: relative;
     display: flex;
+    margin: 40px;
+    grid-auto-flow: dense;
+    grid-gap: 20px;
     flex-wrap: wrap;
-    justify-content: space-around;
-    align-content: center;
-    gap: 5em;
+}
+
+.project-item {
+    flex: 1 1 33%;
+    min-height: 45vh;
+    border-radius: 18px;
+    padding: 0px;
+    display: grid;
+    font-size: 1rem;
+    transition-duration: 0.4s; /* Apply a smooth transition on border-radius */
+}
+
+.project-item:hover {
+    background: var(--gradient);
+    color:#fff;
+}
+
+.content {
+    margin: 20px;
+    padding: 0px;
+    font-size: 2rem;
+}
+
+.surge {
+    background: url(images/surge_new.png);
+    background-position: center center;
+    background-size: contain;
+    color: transparent;
+    background-repeat: no-repeat;
+}
+
+.portfolio {
+    background: url(images/ppwebsite.png);
+    background-position: center center;
+    background-size: cover;
+    color: transparent;
+    background-repeat: no-repeat;
+}
+
+.truboba {
+    background: url(images/truBoba_background.png);
+    background-position: center center;
+    background-size: cover;
+    color: transparent;
+    background-repeat: no-repeat;
+}
+
+#info {
+    font-size: 1.5rem;
+}
+
+#demo-button {
+    background-color: red;
 }
 
 #contact {
@@ -183,7 +240,7 @@ section {
     }
 
     #name {
-        font-weight: 400;
+        font-weight: 300;
         font-size: 3.5rem;
         font-stretch: expanded;
         white-space: nowrap;
@@ -218,4 +275,48 @@ section {
         font-size: 3rem;
         color:#6699cc; /* Changes colour on hover  */
       }
+
+    .wrapper {
+        /*outline: red dashed 1px;*/
+        margin: 0 auto;
+        width: 95%;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .project-item {
+        flex: 1 1 100%;
+        min-height: 10vh;
+        border-radius: 18px;
+        padding: 0px;
+        display: grid;
+        font-size: 0.5rem;
+        transition-duration: 0.4s; /* Apply a smooth transition on border-radius */
+    }
+    
+    .project-item:hover {
+        background: var(--gradient);
+        color:#fff;
+    }
+    
+    .content {
+        margin: 20px;
+        padding: 0px;
+        font-size: 1rem;
+    }
+
+    #info {
+        font-size: 0.8rem;
+    }
+
+    .surge {
+        background: url(images/surge_new_cropped.png);
+        background-position: 0%, 0%;
+        background-size: cover;
+        color: transparent;
+        background-repeat: no-repeat;
+    }
+
 }
