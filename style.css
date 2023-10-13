@@ -181,14 +181,12 @@ section {
     }
 
     #name {
-        font-weight: 100;
         font-size: 3.5rem;
         font-stretch: expanded;
         white-space: nowrap;
     }
     
     #p1 {
-        font-weight: 100;
         font-size: 1.75rem;
         font-stretch: expanded;
         white-space: nowrap;
