@@ -41,6 +41,8 @@ section {
 }
 
 #home {
+    width: 100%;
+    height: 100%;
     background: var(--gradient);
     display: flex;
     justify-content: center;
@@ -50,7 +52,7 @@ section {
 .intro_div {
     /*outline: red dashed 1px;*/
     display: flex;
-    max-width: 600px;
+    max-width: 45%;
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
@@ -66,14 +68,14 @@ section {
 
 #name {
     font-weight: 100;
-    font-size: 96px;
+    font-size: 6rem;
     font-stretch: expanded;
     white-space: nowrap;
 }
 
 #p1 {
     font-weight: 100;
-    font-size: 48px;
+    font-size: 3rem;
     font-stretch: expanded;
     white-space: nowrap;
     margin-left: auto;
@@ -90,7 +92,6 @@ section {
 
 .header-button {
     /*outline: red dashed 1px;*/
-    margin: 5px;
     height: 120px;
     width: 120px;
     background-color: transparent;
@@ -98,18 +99,21 @@ section {
     border-radius: 28%;
     display: inline-block;
     border: none;
-    font-size: 16px;
+    font-size: 3.5rem;
     cursor: pointer;
-    transition: color 0.4s; /* Apply a smooth transition on border-radius */
+    transition-property: color, font-size;
+    transition-duration: 0.4s; /* Apply a smooth transition on border-radius */
     color: white;
-    font-size: 3rem;
 }
 
 .header-button:hover {
+    font-size: 4rem;
     color:#6699cc; /* Changes colour on hover  */
   }
 
 #projects {
+    height: 100%;
+    height: 100%;
     background-color: #6699cc;
 }
 
@@ -132,7 +136,9 @@ section {
     gap: 5em;
 }
 
-#contacts {
+#contact {
+    height: 100%;
+    width: 100%;
     background-color: black;
 }
 
@@ -159,11 +165,57 @@ section {
 
 @media (max-width: 600px) 
 {
-    body {
-        position: absolute;
-    }
 
     section {
+        height: 100vh;
         width: 100%;
     }
+
+    body {
+        height: 100vh;
+        height: 100svh;
+        width: 100%;
+        font-size: 100%;
+        font-family: sans-serif;
+        color: #fff;
+        position: flex;
+        flex-direction: column;
+    }
+
+    #name {
+        font-weight: 100;
+        font-size: 3.5rem;
+        font-stretch: expanded;
+        white-space: nowrap;
+    }
+    
+    #p1 {
+        font-weight: 100;
+        font-size: 1.75rem;
+        font-stretch: expanded;
+        white-space: nowrap;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .header-button {
+        /*outline: red dashed 1px;*/
+        height: 80px;
+        width: 80px;
+        background-color: transparent;
+        opacity: 1;
+        border-radius: 28%;
+        display: inline-block;
+        border: none;
+        font-size: 2.5rem;
+        cursor: pointer;
+        transition-property: color, font-size;
+        transition-duration: 0.4s; /* Apply a smooth transition on border-radius */
+        color: white;
+    }
+    
+    .header-button:hover {
+        font-size: 3rem;
+        color:#6699cc; /* Changes colour on hover  */
+      }
 }
