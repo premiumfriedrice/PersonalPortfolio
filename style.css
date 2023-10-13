@@ -36,9 +36,8 @@ body {
 }
 
 section {
-    float: left;
     height: 100vh;
-    width: 100vh;
+    width: 100vw;
 }
 
 #home {
