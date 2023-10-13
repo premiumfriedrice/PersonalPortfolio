@@ -67,12 +67,14 @@ section {
 }
 
 #name {
+    font-weight: 200;
     font-size: 6rem;
     font-stretch: expanded;
     white-space: nowrap;
 }
 
-#p1 {
+#title {
+    font-weight: 200;
     font-size: 3rem;
     font-stretch: expanded;
     white-space: nowrap;
@@ -181,12 +183,14 @@ section {
     }
 
     #name {
+        font-weight: 400;
         font-size: 3.5rem;
         font-stretch: expanded;
         white-space: nowrap;
     }
     
-    #p1 {
+    #title {
+        font-weight: bold;
         font-size: 1.75rem;
         font-stretch: expanded;
         white-space: nowrap;
