@@ -134,7 +134,7 @@ section {
 .projects_container {   /* maybe use grid instead of flexbox? */
     position: relative;
     display: flex;
-    margin: 40px;
+    margin: 30px;
     grid-auto-flow: dense;
     grid-gap: 20px;
     flex-wrap: wrap;
@@ -195,6 +195,11 @@ section {
     font-size: 1.8rem;
 }
 
+.demo-button-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
 
 /* CSS */
 #demo-button {
