@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>One Page Website</title>
+    <title>Lloyd Alba</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
 </head>
@@ -26,7 +26,7 @@
             <div class="projects_container">
                 <div class="project-item portfolio">
                     <div class="content">
-                        <h2>Portfolio Website</h2>
+                        <h3>Portfolio Website</h3>
                         <p id="info"> - First web-development side project</p>
                         <p id="info"> - Developed in raw <i>HTML/CSS/JavaScript</i></p>
                         <div class="demo-button-container">
@@ -36,20 +36,22 @@
                 </div>
                 <div class="project-item truboba">
                     <div class="content">
-                        <h2>Truboba Cafe Website</h2>
+                        <h3>Truboba Cafe Website</h3>
                         <p id="info"> - Current side project</p>
                         <p id="info"> - Developing for small business that have I worked at since high school</p>
                     </div>
                 </div>
-                <div class="project-item surge">
-                    <div class="content">
-                        <h2>Surge New</h2>
-                        <p id="info"> - Relieved Arrive Logistics engineering teams 1-2 developer days per sprint</p>
-                        <p id="info"> - Automated beginning stages of development, testing, and deployment of applications</p>
-                        <div class="demo-button-container">
-                            <div class="demo-button-cotainer-child">
-                                <a href="https://drive.google.com/file/d/1edXoUqSkoK6c2iI1yFhLrZH6O06cH8sG/view?usp=sharing" target="_blank"><button id="demo-button">Demo Video</button></a>
-                                <a href="https://docs.google.com/presentation/d/18NHk3gv9ujzzobEe-Jkiu1Cz7DTlYttdXG0bVWnIWvM/edit?usp=sharing" target="_blank"><button id="demo-button">Presentation</button></a>
+                <div class="surge-container">
+                    <div class="project-item surge" style="flex-grow: 0.5">
+                        <div class="content">
+                            <h3>Surge New</h3>
+                            <p id="info"> - Relieved Arrive Logistics engineering teams 1-2 developer days per sprint</p>
+                            <p id="info"> - Automated beginning stages of development, testing, and deployment of applications</p>
+                            <div class="demo-button-container">
+                                <div class="demo-button-cotainer-child">
+                                    <a href="https://drive.google.com/file/d/1edXoUqSkoK6c2iI1yFhLrZH6O06cH8sG/view?usp=sharing" target="_blank"><button id="demo-button">Demo Video</button></a>
+                                    <a href="https://docs.google.com/presentation/d/18NHk3gv9ujzzobEe-Jkiu1Cz7DTlYttdXG0bVWnIWvM/edit?usp=sharing" target="_blank"><button id="demo-button">Presentation</button></a>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -58,14 +60,36 @@
         </div>
     </div>
     <div id="testimonials">
-        <div class="wrapper">
+        <div class="testimonials-wrapper">
             <div class="testimonial_container">
-                <h1>Testimonials</h1>
-                <p>"...Lloyd is a remarkable candidate for any tech-oriented role due to his positive attitude and fast learning ability. We were fortunate to have him on our team at Arrive Logistics, and <span style="color:darkorange"><strong>I am confident he will bring the same dedication and enthusiasm to any future endeavors.</strong></span>"</p>
-                <p id="employer">- Chris Cone</p>
-                <p id="employer-title">Sr. Director of Platform Engineering, Arrive Logistics</p>
-                <a href="https://www.linkedin.com/in/lloydalba/" target="_blank"><button class="contact-button linkedin"><i class="fa-brands fa-linkedin"></i></button></a>
-                <a href = "mailto: lloyddalba@gmail.com"><button class="contact-button email"><i class="fa-solid fa-envelope"></i></button></a>
+                <div class="testimonial-slider">
+                    <div class="slide-row" id="slide">
+                        <div class="slide adam">
+                            <div class="test-info">
+                                <p id="adam-test">"His combination of drive, quick learning, and effective collaboration makes him an asset to any organization who would hire him. The work he has done at Arrive has already made an impact on our organization’s ability to innovate quickly, and has created a strong foundation for us to continue to build on."</p>
+                            </div>
+                            <div class="test-figure">
+                                <h4 id="employer">Adam Croissant</h4>
+                                <p id="employer-title">Staff Software Engineer, Arrive Logistics</p>
+                            </div>
+                        </div>
+                        <div class="slide chris">
+                            <div class="test-info">
+                                <p>"...Lloyd is a remarkable candidate for any tech-oriented role due to his positive attitude and fast learning ability. We were fortunate to have him on our team at Arrive Logistics, and I am confident he will bring the same dedication and enthusiasm to any future endeavors."</p>
+                            </div>
+                            <div class="test-figure">
+                                <h4 id="employer">Chris Cone</h4>
+                                <p id="employer-title">VP of Engineering, Arrive Logistics</p>
+                            </div>
+                        </div>   
+                    </div> 
+                </div>
+                <div class="indicator-container">
+                    <div class="indicator">
+                        <span class="btn active"></span>
+                        <span class="btn"></span>
+                    </div>
+                </div>    
             </div>
         </div>
     </div>
@@ -79,5 +103,28 @@
             </div>
         </div>
     </div>
+
+<script>
+
+    var btn = document.getElementsByClassName("btn");
+    var slide = document.getElementById("slide")
+
+    btn[0].onclick = function() {
+        slide.style.transform = "translateX(0px)";
+        for(i=0;i<2;i++){
+            btn[i].classList.remove("active")
+        }
+        this.classList.add("active")
+    }
+
+    btn[1].onclick = function() {
+        slide.style.transform = "translateX(-907px)";
+        for(i=0;i<2;i++){
+            btn[i].classList.remove("active")
+        }
+        this.classList.add("active")
+    }
+    
+</script>
 </body>
 </html>

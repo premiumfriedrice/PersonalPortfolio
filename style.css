@@ -16,6 +16,11 @@
     src: url(fonts/AvenirNextLTPro-Regular.otf)
 }
 
+@font-face {
+    font-family: "Avenir Bold";
+    src: url(fonts/AvenirNextLTPro-Bold.otf)
+}
+
 * {
     margin:0;
     padding:0;
@@ -124,6 +129,7 @@ section {
     display: flex;
     justify-content: center;
     align-items: center;
+    padding: 10px;
 }
 
 .wrapper {
@@ -143,15 +149,18 @@ section {
     grid-auto-flow: dense;
     grid-gap: 20px;
     flex-wrap: wrap;
+    padding: 10px;
+    justify-content: center;
+    align-items: center;
 }
 
 .project-item {
     flex: 1 1 33%;
-    min-height: 45vh;
+    min-height: 50vh;
     border-radius: 18px;
     padding: 0px;
     display: grid;
-    font-size: 1rem;
+    font-size: 1.7rem;
     transition-duration: 0.4s; /* Apply a smooth transition on border-radius */
 }
 
@@ -159,12 +168,19 @@ section {
     background: var(--gradient);
     color:#fff;
     display: grid;
+    min-height: 50vh;
 }
 
 .content {
     margin: 20px;
-    padding: 0px;
-    font-size: 2rem;
+    padding: 20px;
+    font-size: 1.5rem;
+    line-height: 1.5;
+}
+
+.surge-container {
+    display: inline-block;
+    /*outline: pink dashed 1px;*/
 }
 
 .surge {
@@ -192,7 +208,8 @@ section {
 }
 
 #info {
-    font-size: 1.5rem;
+    font-size: 1.2rem;
+    line-height: 1.6;
 }
 
 #role {
@@ -237,10 +254,10 @@ section {
     display: inline-block;
 }
 
-.content .demo-button-container {
+.project-item .demo-button-container {
     display: none;
 }
-.content:hover .demo-button-container {
+.project-item:hover .demo-button-container {
     display: inline;
 }
 
@@ -248,9 +265,113 @@ section {
     height: 100%;
     width: 100%;
     background: var(--gradientwo);
+    padding-top: 2rem;
+}
+
+.testimonials-wrapper{
+    /* outline: red dashed 1px; */
+    margin: 0 auto;
+    width: 60%;
+    height: 100vh;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    padding-top: 80px;
+    overflow: hidden;
+}
+
+.tesitmonial-slider {
+    display: flex;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+}
+
+.btn {
+    display: inline-block;
+    height: 30px;
+    width: 30px;
+    margin: 4px;
+    border-radius: 15px;
+    background: whitesmoke;
+    cursor: pointer;
+    transition: 0.8s;
+}
+
+.active {
+    width: 60px;
+}
+
+.slide-row {
+    display: flex;
+    width: 200%;
+    transition: 0.8s;
+}
+
+.testimonial-wrapper .testimonial-container {
+    padding-top: 1rem;
+    /*outline: yellow dashed 1px;*/
+    margin: 0 auto;
+    width: 60%;
+    height: 80vh;
+    display: flex;
+    justify-content:center;
+    align-items: center;
+}
+
+.test-title-container {
+    /*outline: #FF9A5A dashed 1px;*/
+    display: flex;
+    justify-content: center;
+    font-size: 1.4rem;
+}
+
+.slide {
+    /*outline: blue dashed 1px;*/
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 40px;
+    position: relative;
+    box-sizing: border-box;
+    min-width: 50%;
+}
+
+.test-info {
+    /*outline: rgb(241, 10, 172) dashed 1px;*/
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    line-height: 2;
+    font-size: 1.4rem;
+    box-sizing: border-box;
+    min-height: 30vh;
+    text-justify: distribute-all-lines;
+}
+
+.test-figure {
+    /*outline: hsl(240, 100%, 85%) dashed 1px;*/
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    line-height: 1.6;
+    font-size: 1.1rem;
+    padding: 25px;
+}
+
+#employer {
+    font-size: 1.4rem;
+    font-family: "Avenir Bold";
+}
+
+.indicator-container {
+    display: flex;
+    justify-content: center;
 }
 
 #contact {
+    outline: green dashed 1px;
     height: 100%;
     width: 100%;
     background-color: black;
@@ -275,7 +396,6 @@ section {
 .contact-button:hover {
     border-radius: 50%; /* Make it a circle on hover */
   }
-
 
 @media (max-width: 600px) 
 {
@@ -345,47 +465,38 @@ section {
     
     .project-item {
         flex: 1 1 100%;
-        min-height: 10vh;
+        min-height: 30vh;
+        min-width: 90vw;
         border-radius: 18px;
         padding: 0px;
         display: grid;
         font-size: 0.5rem;
         transition-duration: 0.4s; /* Apply a smooth transition on border-radius */
+        flex-basis: 250px;
     }
     
     .project-item:hover {
         background: var(--gradient);
         color:#fff;
+        flex-basis: 300px;
+        min-height: 20vh;
     }
     
     .content {
         margin: 20px;
         padding: 0px;
-        font-size: 1.2rem;
-    }
-
-    #info {
-        font-size: 0.8rem;
-    }
-    
-    #role {
-        padding-top: 5px;
         font-size: 1rem;
     }
 
-    .surge {
-        background: url(images/surge_new_cropped.png);
-        background-position: 0%, 0%;
-        background-size: cover;
-        color: transparent;
-        background-repeat: no-repeat;
+    #info {
+        font-size: 0.5rem;
     }
 
     #demo-button {
         margin-top: 10px;
         padding: 10px;
         line-height: 1;
-        font-size: 0.8rem;
+        font-size: 0.6rem;
     }
 
 }
