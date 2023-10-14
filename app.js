@@ -3,7 +3,7 @@ var slide = document.getElementById("slide")
 
 let transAmount = "translateX(-56.75rem)"
 
-var vpsize = window.matchMedia("(max-width: 768px)")
+var vpsize = window.matchMedia("(max-width: 600px)")
 
 function changeTranslate(x) {
     if (x.matches) { // If media query matches translate amount is change, this needed because if the translateamount is set to normal in a smaller viewport, overscroll will happen

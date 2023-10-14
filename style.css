@@ -43,11 +43,13 @@ body {
     font-size: 100%;
     font-family: sans-serif;
     color: #fff;
+    scroll-snap-type: y mandatory;
 }
 
 section {
     height: 100vh;
     width: 100vw;
+    scroll-snap-align: start;
 }
 
 
@@ -294,13 +296,14 @@ section {
 .tesitmonial-slider {
     display: flex;
     overflow-x: auto;
-    scroll-snap-type: x mandatory;
+    scroll-snap-type: x proximity;
 }
 
 .slide-row {
     display: flex;
     width: 200%;
     transition: 0.8s;
+    scroll-snap-type: x proximity;
 }
 
 .testimonial-wrapper .testimonial-container {
@@ -432,7 +435,7 @@ section {
 }
 /* ############################################################ CONTACT SECTION ############################################################ */
 
-@media (max-width: 768px) 
+@media (max-width: 600px) 
 {
 
     section {
