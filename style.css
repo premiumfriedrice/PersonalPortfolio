@@ -4,6 +4,11 @@
         black,
         #6699cc
     );
+    --gradientwo: linear-gradient(
+        0deg,
+        black,
+        #6699cc
+    );
 }
 
 @font-face {
@@ -173,15 +178,15 @@ section {
 .portfolio {
     background: url(images/ppwebsite.png);
     background-position: center center;
-    background-size: cover;
+    background-size: contain;
     color: transparent;
     background-repeat: no-repeat;
 }
 
 .truboba {
-    background: url(images/truBoba_background.png);
+    background: url(images/truBoba_website.png);
     background-position: center center;
-    background-size: cover;
+    background-size: contain;
     color: transparent;
     background-repeat: no-repeat;
 }
@@ -237,6 +242,12 @@ section {
 }
 .content:hover .demo-button-container {
     display: inline;
+}
+
+#testimonials {
+    height: 100%;
+    width: 100%;
+    background: var(--gradientwo);
 }
 
 #contact {
