@@ -280,7 +280,7 @@ section {
 }
 
 .testimonials-wrapper{
-     outline: red dashed 1px; 
+    /*outline: red dashed 1px; */
     margin: 0 auto;
     width: 60%;
     height: 100vh;
@@ -315,7 +315,7 @@ section {
 }
 
 .slide {
-    outline: blue dashed 1px;
+    /*outline: blue dashed 1px;*/
     display: flex;
     justify-content: center;
     align-items: center;
@@ -379,10 +379,18 @@ section {
 
 /* ############################################################ CONTACT SECTION ############################################################ */
 #contact {
-    outline: green dashed 1px;
+    /*outline: green dashed 1px;*/
     height: 100%;
     width: 100%;
     background-color: black;
+    padding: 10px;
+}
+
+.contact-buttons-container {
+    /*outline: yellow dashed 1px;*/
+    width: 600px;
+    display: flex;
+    justify-content: space-between;
 }
 
 .contact-button {
@@ -396,13 +404,31 @@ section {
     border: none;
     font-size: 16px;
     cursor: pointer;
-    transition: border-radius 0.3s; /* Apply a smooth transition on border-radius */
     color: white;
-    font-size: 3rem;
+    font-size: 4.5rem;
+    transition-property: color, font-size;
+    transition-duration: 0.4s; /* Apply a smooth transition on border-radius */
+    color: white;
 }
 
 .contact-button:hover {
-    border-radius: 50%; /* Make it a circle on hover */
+    font-size: 5rem;
+    color:#6699cc; /* Changes colour on hover  */
+}
+
+.footer {
+    background: black;
+    min-height: 20vh;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+#signature {
+    margin:5px;
+    margin-bottom: 20px;
 }
 /* ############################################################ CONTACT SECTION ############################################################ */
 
@@ -509,7 +535,7 @@ section {
     }
 
     .testimonials-wrapper{
-        outline: red dashed 1px; 
+        /*outline: red dashed 1px; */
         margin: 0 auto;
         width: 85%;
         height: 90vh;
@@ -543,7 +569,7 @@ section {
     }
     
     .slide {
-        outline: blue dashed 1px;
+        /*outline: blue dashed 1px;*/
         display: flex;
         justify-content: center;
         align-items: center;
@@ -556,7 +582,7 @@ section {
     }
     
     .test-info {
-        outline: rgb(241, 10, 172) dashed 1px;
+        /*outline: rgb(241, 10, 172) dashed 1px;*/
         display: flex;
         justify-content: center;
         align-items: center;
@@ -575,7 +601,7 @@ section {
         flex-direction: column;
         line-height: 1.6;
         font-size: 1.1rem;
-        padding: 25px;
+        padding: 10px;
     }
     
     #employer {
@@ -584,13 +610,14 @@ section {
     }
 
     #employer-title {
+        
         font-size: 0.7rem;
     }
     
     .btn {
         display: inline-block;
-        height: 30px;
-        width: 30px;
+        height: 25px;
+        width: 25px;
         margin: 4px;
         border-radius: 15px;
         background: whitesmoke;
@@ -606,4 +633,42 @@ section {
         display: flex;
         justify-content: center;
     }
+
+    .contact-buttons-container {
+        /*outline: yellow dashed 1px;*/
+        width: 40vw;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+    
+    .contact-button {
+        margin: 10px;
+        height: 120px;
+        width: 120px;
+        background-color: transparent;
+        opacity: 1;
+        border-radius: 28%;
+        display: inline-block;
+        border: none;
+        font-size: 16px;
+        cursor: pointer;
+        color: white;
+        font-size: 3.5rem;
+        transition-property: color, font-size;
+        transition-duration: 0.4s; /* Apply a smooth transition on border-radius */
+        color: white;
+    }
+    
+    .contact-button:hover {
+        font-size: 4rem;
+        color:#6699cc; /* Changes colour on hover  */
+    }
+
+    #signature {
+        font-size: 0.7rem;
+        margin-bottom: 20px;
+    }
+
 }   
