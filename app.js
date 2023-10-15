@@ -7,7 +7,7 @@ var vpsize = window.matchMedia("(max-width: 400px)")
 
 function changeTranslate(x) {
     if (x.matches) { // If media query matches translate amount is change, this needed because if the translateamount is set to normal in a smaller viewport, overscroll will happen
-        transAmount = "translateX(-19.95rem)"; 
+        transAmount = "translateX(-20.7rem)"; 
         }
 }
 
