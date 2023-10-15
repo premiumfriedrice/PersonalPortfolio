@@ -435,7 +435,7 @@ section {
 }
 /* ############################################################ CONTACT SECTION ############################################################ */
 
-@media (max-width: 600px) 
+@media (max-width: 400px)
 {
 
     section {
@@ -562,7 +562,7 @@ section {
     
     .testimonial-wrapper .testimonial-container {
         padding-top: 1rem;
-        /*outline: yellow dashed 1px;*/
+        outline: yellow dashed 1px;
         margin: 0 auto;
         width: 60%;
         height: 80vh;
@@ -572,7 +572,7 @@ section {
     }
     
     .slide {
-        /*outline: blue dashed 1px;*/
+        outline: blue dashed 1px;
         display: flex;
         justify-content: center;
         align-items: center;
