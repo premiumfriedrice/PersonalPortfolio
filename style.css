@@ -318,7 +318,7 @@ section {
 }
 
 .slide {
-    /*outline: blue dashed 1px;*/
+   /*outline: blue dashed 1px;*/
     display: flex;
     justify-content: center;
     align-items: center;
@@ -339,6 +339,26 @@ section {
     box-sizing: border-box;
     min-height: 30vh;
     text-justify: distribute-all-lines;
+}
+
+.test-button {
+    margin: 10px;
+    position: relative;
+    background-color: transparent;
+    opacity: 1;
+    border-radius: 28%;
+    border: none;
+    display: inline-block;
+    font-size: 16px;
+    cursor: pointer;
+    font-size: 1.3rem;
+    transition-property: color;
+    transition-duration: 0.4s;
+    color: white;
+}
+
+.test-button:hover {
+    color:#6699cc;
 }
 
 .test-figure {
@@ -407,16 +427,15 @@ section {
     border: none;
     font-size: 16px;
     cursor: pointer;
-    color: white;
     font-size: 4.5rem;
     transition-property: color, font-size;
-    transition-duration: 0.4s; /* Apply a smooth transition on border-radius */
+    transition-duration: 0.4s;
     color: white;
 }
 
 .contact-button:hover {
     font-size: 5rem;
-    color:#6699cc; /* Changes colour on hover  */
+    color:#6699cc;
 }
 
 .footer {
@@ -482,7 +501,7 @@ section {
         font-size: 2.5rem;
         cursor: pointer;
         transition-property: color, font-size;
-        transition-duration: 0.4s; /* Apply a smooth transition on border-radius */
+        transition-duration: 0.4s;
         color: white;
     }
     
@@ -660,7 +679,7 @@ section {
         color: white;
         font-size: 3.5rem;
         transition-property: color, font-size;
-        transition-duration: 0.4s; /* Apply a smooth transition on border-radius */
+        transition-duration: 0.4s;
         color: white;
     }
     
