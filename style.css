@@ -151,7 +151,7 @@ section {
     align-items: center;
 }
 
-.projects_container {   /* maybe use grid instead of flexbox? */
+.projects_container { 
     position: relative;
     display: flex;
     margin: 30px;
@@ -170,7 +170,7 @@ section {
     padding: 0px;
     display: grid;
     font-size: 1.7rem;
-    transition-duration: 0.4s; /* Apply a smooth transition on border-radius */
+    transition-duration: 0.4s;
 }
 
 .project-item:hover {
@@ -528,7 +528,7 @@ section {
         padding: 0px;
         display: grid;
         font-size: 0.5rem;
-        transition-duration: 0.4s; /* Apply a smooth transition on border-radius */
+        transition-duration: 0.4s;
         flex-basis: 250px;
     }
     
@@ -608,11 +608,27 @@ section {
         display: flex;
         justify-content: center;
         align-items: center;
-        line-height: 2.3;
+        line-height: 2.5;
         font-size: 0.8rem;
+        font-weight: 700;
         box-sizing: border-box;
         min-height: 30vh;
         text-justify: distribute-all-lines;
+    }
+
+    .test-button {
+        margin: 10px;
+        position: relative;
+        background-color: transparent;
+        opacity: 1;
+        border-radius: 28%;
+        border: none;
+        display: inline-block;
+        cursor: pointer;
+        font-size: .9rem;
+        transition-property: color;
+        transition-duration: 0.4s;
+        color: white;
     }
     
     .test-figure {
