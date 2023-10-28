@@ -423,19 +423,20 @@ section {
     color:#6699cc;
 }
 
-.footer {
+.footer-div {
     background: black;
     min-height: 20vh;
     color: white;
     display: flex;
-    justify-content: center;
+    justify-content: flex-end;
     align-items: center;
     padding: 20px;
+    flex-direction: column;
+    line-height: 2rem;
 }
 
-#signature {
+.signature {
     margin:5px;
-    margin-bottom: 20px;
 }
 /* ############################################################ CONTACT SECTION ############################################################ */
 
